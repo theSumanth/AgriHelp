@@ -1,0 +1,23 @@
+.img {      
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+.item {
+    height: 480px;
+}
+.carousel-text {
+    position: absolute !important;
+    z-index: 50;
+    top: 180px;
+  
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    pointer-events: none;
+    font-size: 2rem;
+}
+
+.carousel-text > center > h1 {
+    color: white;
+}
