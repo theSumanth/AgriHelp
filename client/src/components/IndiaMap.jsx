@@ -2,13 +2,14 @@ import { useState } from "react";
 
 import ReactDatamaps from "react-india-states-map";
 import STATES from '../data/States.js'
-
+import { Link } from "react-router-dom";
 const IndiaMap = () => {
+    
     const [activeState, setactiveState] = useState({
         data: STATES["Andhra Pradesh"],
         name: "Andhra Pradesh"
     });
-
+    const as = `states/${activeState.name}`;
 
     const [stateLists, setStateLists] = useState(STATES);
 
@@ -50,8 +51,8 @@ const IndiaMap = () => {
                 <h2 className="fade-in-up" style={{fontWeight:"400"}}>Production : <span className="fade-in-up" style={{fontWeight:"300", fontSize:"1.2rem"}}>{activeState.data.Production}</span></h2>
                 <h2 className="fade-in-up" style={{fontWeight:"400"}}>Population : <span className="fade-in-up" style={{fontWeight:"300", fontSize:"1.2rem"}}>{activeState.data.Population}</span></h2>
                 <h2 className="fade-in-up" style={{fontWeight:"400"}}>Key crops : <span className="fade-in-up" style={{fontWeight:"300", fontSize:"1.2rem"}}>{activeState.data.keyCrops}</span></h2>
+                <Link to={as}><button className="button-28 fade-in-up" role="button">Detail Analysis</button></Link>
                 
-                <button className="button-28 fade-in-up" role="button">Detail Analysis</button>
             </div>
         </div>
     );
