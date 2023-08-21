@@ -51,6 +51,7 @@ const IndiaMap = () => {
                 <h2 className="fade-in-up" style={{fontWeight:"400"}}>Production : <span className="fade-in-up" style={{fontWeight:"300", fontSize:"1.2rem"}}>{activeState.data.Production}</span></h2>
                 <h2 className="fade-in-up" style={{fontWeight:"400"}}>Population : <span className="fade-in-up" style={{fontWeight:"300", fontSize:"1.2rem"}}>{activeState.data.Population}</span></h2>
                 <h2 className="fade-in-up" style={{fontWeight:"400"}}>Key crops : <span className="fade-in-up" style={{fontWeight:"300", fontSize:"1.2rem"}}>{activeState.data.keyCrops}</span></h2>
+
                 <Link to={as}><button className="button-28 fade-in-up" role="button"> Detailed Analysis Page </button></Link>
                 
             </div>

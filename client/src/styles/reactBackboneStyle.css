@@ -1,0 +1,20 @@
+.content {
+    height: 100vh;
+}
+.text-content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    padding: 5px 25px;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1rem;
+    align-items: center;
+}
+.text-content .para {
+    display: flex;
+    align-content: center;
+    margin: 0;
+    line-height: 120%;
+    font-size: large;
+}
