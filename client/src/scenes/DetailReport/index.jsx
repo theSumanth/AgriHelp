@@ -7,7 +7,7 @@ const DetailReport = () => {
     const { stateName } = useParams();
     return (
         <>
-            <div style={{ display: "flex", flexDirection: "row", height: "60%" }}>
+            <div style={{ display: "flex", flexDirection: "row", height: "80%" }}>
             <div style={{padding: "30px", boxShadow: '0px 6px 8px rgba(0, 0, 0, 0.5)', margin: "30px", borderRadius: "10px", border: "2px solid rgba(54, 162, 235, 1)", width:"40%"}}>
             <center><h3>Cultivated land over the years (in hectares)</h3></center>
             <FirstGraph stateName={stateName} />
@@ -17,7 +17,7 @@ const DetailReport = () => {
             <SecondGraph stateName={stateName} />
             </div>
             </div>
-            <div style={{ display: "flex", flexDirection: "row", height: "60%" }}>
+            <div style={{ display: "flex", flexDirection: "row", height: "80%" }}>
             <div style={{padding: "30px", boxShadow: '0px 6px 8px rgba(0, 0, 0, 0.5)', margin: "30px", borderRadius: "10px", border: "2px solid rgba(255,205,86,1)", width:"40%"}}>
             <center><h3>Different Crops produced</h3></center>
             <ThirdGraph stateName={stateName} />
