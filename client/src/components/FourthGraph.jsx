@@ -103,7 +103,7 @@ const FourthGraph = (props) => {
 
 
     return (
-        <div style={{ height: '450px' }} ref={chartContainerRef}>
+        <div style={{ height: '80%' }} ref={chartContainerRef}>
             <canvas id="season" width="400" height="200"></canvas>
         </div>
     );

@@ -95,7 +95,7 @@ const FirstGraph = (props) => {
     }, [chartOptions.animation]);
 
     return ( 
-        <div style={{ height: '450px' }} ref={chartContainerRef}> 
+        <div style={{ height: '80%' }} ref={chartContainerRef}> 
             <canvas id="myChart" height="400"></canvas>
         </div>
     );
