@@ -93,7 +93,7 @@ const SecondGraph = (props) => {
         };
     }, [chartOptions.animation]);
     return ( 
-        <div style={{ height: '450px' }} ref={chartContainerRef}> 
+        <div style={{ height: '80%' }} ref={chartContainerRef}> 
             <canvas id="chart" width="400" height="200"></canvas>
         </div>
     );
