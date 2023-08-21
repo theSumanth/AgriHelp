@@ -1,8 +1,7 @@
 import IndiaMap from "../../components/IndiaMap";
-import BackBone from "../../components/Backbone";
 import Cards from "../../components/Cards";
+import ReactBackbone from "../../components/reactBackbone";
 import "./home.css";
-// import '../../styles/backboneStyle.css';
 
 
 import Carousels from "../../components/Carousels";
@@ -10,7 +9,7 @@ const HomePage = () => {
     return (
         <div className="home">
             <Carousels />
-            <BackBone/>
+            <ReactBackbone/>
             <IndiaMap />
             <Cards />
             <center>

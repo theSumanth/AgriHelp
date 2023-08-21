@@ -1,5 +1,10 @@
-.active{
-    background-color: #52b788;
+nav ul li .navbutton.active {
+    color: #52b788;
+}
+
+.logo {
+    height: 20%;
+    width: 20%;
 }
 
 ol, ul {
@@ -15,14 +20,7 @@ nav {
     position: sticky;
     top: 0;
     z-index: 60;
-}
-
-nav .title {
-    font-size: 1.5rem;
-    margin: 1rem;
-    font-weight: bold;
-    text-decoration: none;
-    color: white;
+    margin: auto;
 }
 
 nav ul {
@@ -32,24 +30,39 @@ nav ul {
 
 nav ul li {
    list-style: none; 
-   padding: 0;
+   padding: 0 1.0rem;
 }
 
-nav ul li a {
-    display: block;
+nav ul li .navbutton {
+    display: flex;
+    position: relative;
     text-decoration: none;
     color: white;
-    padding: 0.5rem;
+    padding: 1.0rem 0.2rem;
     margin: 0 1.5rem;
-    border-radius: 0.5rem;
-    transition: 0.3s ease-in-out;
+    /* transition: 0.3s ease-in-out; */
     font-size: 1.5rem;
-    /* font-weight: 600; */
 }
 
-nav ul li a:not(.active):hover {
-    background-color:#d8f3dc ;
-    color:#1b4332;
+nav ul li .navbutton::after {
+    content: "";
+    position: absolute;
+    background-color: #52b788;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: 10px;
+    transition: 0.3s;
+}
+
+/* nav ul li .navbutton:hover::after {
+    width: 100%;
+} */
+
+nav ul li .navbutton:not(.active):hover::after {
+    /* background-color:#d8f3dc ;
+    color:#1b4332; */
+    width: 100%;
 }
 
 nav .menu {
