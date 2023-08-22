@@ -3,10 +3,12 @@ import { useParams } from 'react-router-dom';
 import SecondGraph from '../../components/secondGraph';
 import ThirdGraph from '../../components/thirdGraph';
 import FourthGraph from '../../components/FourthGraph';
+import DropDown from '../../components/dropDown';
 const DetailReport = () => {
     const { stateName } = useParams();
     return (
         <>
+         <DropDown stateName={stateName}/>
             <div style={{ display: "flex", flexDirection: "row", height: "80%" }}>
             <div style={{padding: "30px", boxShadow: '0px 6px 8px rgba(0, 0, 0, 0.5)', margin: "30px", borderRadius: "10px", border: "2px solid rgba(54, 162, 235, 1)", width:"40%"}}>
             <center><h3>Cultivated land over the years (in hectares)</h3></center>
