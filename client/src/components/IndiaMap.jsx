@@ -3,35 +3,37 @@ import { useState } from "react";
 import ReactDatamaps from "react-india-states-map";
 import STATES from '../data/States.js'
 import { Link } from "react-router-dom";
+
 const IndiaMap = () => {
     
+
     const [activeState, setactiveState] = useState({
         data: STATES["Andhra Pradesh"],
-        name: "Andhra Pradesh"
+        name: "Andhra Pradesh",
+ 
     });
     const as = `states/${activeState.name}`;
 
     const [stateLists, setStateLists] = useState(STATES);
 
     const stateOnClick = (data, name) => {
-        
-
         setactiveState({ data, name });
-
     };
 
     return (    
+        // <div className="container">
         
-        <div className="row">
-            
+        <div className="row container">
+        <img className="container-img" src={activeState.data.image}/>
             <ReactDatamaps
                 regionData={stateLists}
                 mapLayout={{
                     // hoverTitle: "Count",
-                    noDataColor: "#ffffff",
-                    borderColor: "#000000",
-                    hoverBorderColor: "pink",
-                    hoverColor: "green"
+                    noDataColor: "transparent",
+                    borderColor: "white",
+                    hoverBorderColor: "white",
+                    hoverColor: "green",
+                
                 }}
                 hoverComponent={({ value }) => {
                     return (
@@ -56,6 +58,7 @@ const IndiaMap = () => {
                 
             </div>
         </div>
+        
     );
 
 

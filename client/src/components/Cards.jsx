@@ -37,7 +37,7 @@ const Cards = () => {
     ];
 
     return (
-        <>
+        <div className="schema">
         <center><h1>Schemes</h1></center>
         <div className="card-container">
             {cards.map((card) => (
@@ -49,7 +49,7 @@ const Cards = () => {
                 />
             ))}
         </div>
-        </>
+        </div>
        
     );
 };
