@@ -1,0 +1,88 @@
+/* .insights > img{
+    background-image: url("../components/images/background_for_insights.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    z-index: -100;
+    position: fixed;
+    filter: brightness(0.5);
+    margin-top: -134px;
+} */
+
+.insight-head1 {
+    /* margin-top: 50px; */
+    color: white;
+    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+.insight-head1 h1{
+    margin-top: 0px;
+}
+
+.insight-head2 {
+    color: #000;
+    /* text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.5); */
+    position: relative;
+}
+
+.insight-head1::before {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 2px;
+    background: #000;
+    left: 0;
+    margin-left: 15%;
+    top: 50%;
+    position: absolute;
+    background-color: white;
+}
+
+.insight-head1::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 2px;
+    background: #000;
+    right: 0;
+    margin-right: 15%;
+    top: 50%;
+    position: absolute;
+    background-color: white;
+  }
+
+.in-card-container {
+    /* border: 2px solid black; */
+    /* border-radius: 1.5rem; */
+    padding: 50px;
+    /* margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 50px; */
+    margin: 50px 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    /* box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.5); */
+}
+
+.in-cognos-container {
+    width: 100%;
+    cursor: pointer;
+}
+
+.in-card-title {
+    display: block;
+    width: 1100px;
+    color: black;
+    border: 1px solid white;
+    border-radius: 8px;
+    line-height: 1.6;
+    background-color: aliceblue;
+}
+
+/* .in-cognos-container:hover + .in-card-title {
+    display: block;
+    transition: 0.3s ease-in-out;
+} */

@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "chart.js": "^4.2.1",
     "chartjs-plugin-datalabels": "^2.2.0",
+    "framer-motion": "^10.16.1",
     "intersection-observer": "^0.12.2",
     "react": "^18.2.0",
     "react-carousel-slider": "^2.0.13",
