@@ -5,11 +5,16 @@
   perspective: 10px;
 } */
 
-.row {
+/* .row {
  
   background-image: url('../../../public/assets/map_bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
+} */
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
 }
 
 .container-img {
