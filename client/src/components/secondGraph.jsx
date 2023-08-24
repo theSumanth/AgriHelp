@@ -24,7 +24,7 @@ const SecondGraph = (props) => {
                 label: 'production',
                 data: data,
                 fill: false,
-                borderColor: 'rgba(54, 162, 235, 1)',
+                borderColor: 'rgba(72,191,132,1)',
                 borderWidth: 2,
             },
         ],

@@ -3,14 +3,13 @@ import '../styles/Card.css';
 
 const Card = ({ imageUrl, description, articleLink }) => {
   return (
+    <a style={{textDecoration:"none"}} href={articleLink}  className="card-button" target='_blank'>
     <div className="card">
-      
-      
-      <a href={articleLink}  className="card-button" target='_blank'>
       <img src={imageUrl} alt="Card" className="card-image" />
-      </a>
+     
       <div className="card-description">{description}</div>
     </div>
+    </a>
   );
 };
 
