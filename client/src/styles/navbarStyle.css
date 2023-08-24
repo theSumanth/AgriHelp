@@ -17,7 +17,8 @@ nav {
     align-items: center;
     background-color: #1b4332;
     color: white;
-    position: sticky;
+    position: sticky !important;
+    width: 100%;
     top: 0;
     z-index: 60;
     margin: auto;
@@ -60,8 +61,6 @@ nav ul li .navbutton::after {
 } */
 
 nav ul li .navbutton:not(.active):hover::after {
-    /* background-color:#d8f3dc ;
-    color:#1b4332; */
     width: 100%;
 }
 

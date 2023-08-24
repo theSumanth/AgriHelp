@@ -1,6 +1,13 @@
+import React from "react";
+import './insights.css'
+import InsightsComponent from "../../components/InsightsComponent";
+
 const Insights = () => {
     return (
-        <h1> in insights</h1>
+        <div className="insights"
+        >
+            <InsightsComponent />
+        </div>
     )
 }
 
