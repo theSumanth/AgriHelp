@@ -1,0 +1,118 @@
+.secondform {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.3rem;
+    padding: 10%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 10px rgba(0,0,0, 0.2);
+}
+
+.firstform {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.3rem;
+    padding: 10%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 5px 10px rgba(0,0,0, 0.2);
+}
+
+br + hr {
+    margin-bottom: 5%;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0.;
+}
+
+.form-input > img {
+    width: 6%;
+    height: 6%;
+    margin-right: 0.5rem;
+}  
+
+.calc-dropdown {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: #333;
+    outline: none;
+    cursor: pointer;
+    /* font-family: "League Spartan", sans-serif !important; */
+    transition: background-color 0.3s;
+}
+
+.calc-dropdown:hover {
+    background-color: #beffd9; 
+}
+
+.calc-dropdown:focus {
+    background-color: #e0e0e0; 
+}
+
+.calc-dropdown option {
+    padding: 10px;
+    background-color: white;
+}
+
+.calc-dropdown option:hover {
+    background-color: #8cffbc;
+}
+
+.calc-dropdown::-ms-expand {
+    display: none; 
+}
+
+/* .calc-dropdown option:checked {
+    display: none; 
+} */
+
+.button-40 {
+  background-color: #27ae60;
+  border: 1px solid transparent;
+  border-radius: .75rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  flex: 0 0 auto;
+  font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  padding: .75rem 1.2rem;
+  text-align: center;
+  text-decoration: none #6B7280 solid;
+  text-decoration-thickness: auto;
+  transition-duration: .2s;
+  transition-property: background-color,border-color,color,fill,stroke;
+  transition-timing-function: cubic-bezier(.4, 0, 0.2, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+}
+
+.button-40:hover {
+  background-color: #1e8449;
+}
+
+.button-40:focus {
+  box-shadow: none;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .button-40 {
+    padding: .75rem 1.5rem;
+  }
+}

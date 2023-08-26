@@ -1,6 +1,12 @@
+import React from "react";
+import './calculator.css'
+import CalculatorMain from "../../components/CalculatorMain";
+
 const Calculator = () => {
     return (
-        <h1>IN calculator</h1>
+        <div className="calc">
+            <CalculatorMain />
+        </div>
     )
 }
 

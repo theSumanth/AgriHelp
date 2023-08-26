@@ -28,6 +28,9 @@ nav ul {
     display: flex;
     margin: 1%;
 }
+nav img {
+    margin: 1%;
+}
 
 nav ul li {
    list-style: none; 

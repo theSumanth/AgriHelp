@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import {motion} from 'framer-motion'
 
-import '../styles/insightsComponentStyle.css'
+import '../styles/insightsComponentStyle2.css'
 // import bg from "../components/images/background_for_insights.jpg"
 
 const InsightsComponent = () => {
@@ -16,21 +16,32 @@ const InsightsComponent = () => {
     const [isOpen9, setIsOpen9] = useState(false);
 
   return (
-    <div className='insights'>
+    <motion.div className='insights'
+        layout 
+        initial={{opacity: 0}} 
+        animate={{opacity: 1}}
+    >
         {/* <img src={bg} alt="insight_bg" /> */}
         <div className='insight-head1'>
             <center><h1>Agriculture in India - Current Scenario</h1></center>
         </div>
         <motion.div
             layout 
-            transition={{layout:{duration:1, type:"spring"}}}
+            variants={{
+                hidden: { opacity: 0, y: 275 },
+                visible: { opacity: 1, y: 0},
+            }}
+            initial="hidden"
+            animate="visible"
+            transition={{duration: 0.5, delay: 0.25}}
             className='in-card-container'
             style={{borderRadius: '1.5rem', boxShadow: '0px 10px 30px rgba(0,0,0, 0.5)'}}>
             <motion.div layout="position" className='in-cognos-container'
-                onMouseOut={() => setIsOpen(false)}
-                onMouseEnter={() => setIsOpen(true)}>
+                onMouseEnter={() => setIsOpen(true)}
+                // onMouseOut={() => setIsOpen(false)}
+                >
                 <center>
-                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight1&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a156479be_00000000" width="1100" height="550" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight1&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a156479be_00000000" width="1000" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
                 </center>
             </motion.div>
             {isOpen && (
@@ -54,10 +65,11 @@ const InsightsComponent = () => {
             className='in-card-container'
             style={{borderRadius: '1.5rem', boxShadow: '0px 10px 30px rgba(0,0,0, 0.5)'}}>
             <motion.div layout="position" className='in-cognos-container'
-                onMouseOut={() => setIsOpen2(false)}
-                onMouseEnter={() => setIsOpen2(true)}>
+                // onMouseOut={() => setIsOpen2(false)}
+                onMouseEnter={() => setIsOpen2(true)}
+            >
                 <center>
-                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight2&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a159923e1_00000001" width="1100" height="550" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight2&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a159923e1_00000001" width="1000" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
                 </center>
             </motion.div>
             {isOpen2 && (
@@ -81,10 +93,10 @@ const InsightsComponent = () => {
             className='in-card-container'
             style={{borderRadius: '1.5rem', boxShadow: '0px 10px 30px rgba(0,0,0, 0.5)'}}>
             <motion.div layout="position" className='in-cognos-container'
-                onMouseOut={() => setIsOpen3(false)}
+                // onMouseOut={() => setIsOpen3(false)}
                 onMouseEnter={() => setIsOpen3(true)}>
                 <center>
-                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight3&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a1b0bf4eb_00000008" width="1100" height="550" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight3&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a1b0bf4eb_00000008" width="1000" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
                 </center>
             </motion.div>
             {isOpen3 && (
@@ -113,10 +125,10 @@ const InsightsComponent = () => {
             className='in-card-container'
             style={{borderRadius: '1.5rem', boxShadow: '0px 10px 30px rgba(0,0,0, 0.5)'}}>
             <motion.div layout="position" className='in-cognos-container'
-                onMouseOut={() => setIsOpen4(false)}
+                // onMouseOut={() => setIsOpen4(false)}
                 onMouseEnter={() => setIsOpen4(true)}>
                 <center>
-                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsights4&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a1c218cbb_00000001" width="1100" height="550" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>                
+                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsights4&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a1c218cbb_00000001" width="1000" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>                
                 </center>
             </motion.div>
             {isOpen4 && (
@@ -140,10 +152,10 @@ const InsightsComponent = () => {
             className='in-card-container'
             style={{borderRadius: '1.5rem', boxShadow: '0px 10px 30px rgba(0,0,0, 0.5)'}}>
             <motion.div layout="position" className='in-cognos-container'
-                onMouseOut={() => setIsOpen5(false)}
+                // onMouseOut={() => setIsOpen5(false)}
                 onMouseEnter={() => setIsOpen5(true)}>
                 <center>
-                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight5&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a1dc4845d_00000001" width="1100" height="550" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>                
+                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight5&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a1dc4845d_00000001" width="1000" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>                
                 </center>
             </motion.div>
             {isOpen5 && (
@@ -167,10 +179,10 @@ const InsightsComponent = () => {
             className='in-card-container'
             style={{borderRadius: '1.5rem', boxShadow: '0px 10px 30px rgba(0,0,0, 0.5)'}}>
             <motion.div layout="position" className='in-cognos-container'
-                onMouseOut={() => setIsOpen6(false)}
+                // onMouseOut={() => setIsOpen6(false)}
                 onMouseEnter={() => setIsOpen6(true)}>
                 <center>
-                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight6&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a1df8f52c_00000002" width="1100" height="550" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>                
+                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight6&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a1df8f52c_00000002" width="1000" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>                
                 </center>
             </motion.div>
             {isOpen6 && (
@@ -198,13 +210,13 @@ const InsightsComponent = () => {
             className='in-card-container'
             style={{borderRadius: '1.5rem', boxShadow: '0px 10px 30px rgba(0,0,0, 0.5)'}}>
             <motion.div layout="position" className='in-cognos-container'
-                onMouseOut={() => setIsOpen7(false)}
+                // onMouseOut={() => setIsOpen7(false)}
                 onMouseEnter={() => setIsOpen7(true)}>
                 <div className='insight-head2'>
                     <center><h3>COCONUT</h3></center>
                 </div>
                 <center>
-                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight7&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a22d71877_00000002" width="1100" height="550" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>                
+                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight7&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a22d71877_00000002" width="1000" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>                
                 </center>
             </motion.div>
             {isOpen7 && (
@@ -228,13 +240,13 @@ const InsightsComponent = () => {
             className='in-card-container'
             style={{borderRadius: '1.5rem', boxShadow: '0px 10px 30px rgba(0,0,0, 0.5)'}}>
             <motion.div layout="position" className='in-cognos-container'
-                onMouseOut={() => setIsOpen8(false)}
+                // onMouseOut={() => setIsOpen8(false)}
                 onMouseEnter={() => setIsOpen8(true)}>
                 <div className='insight-head2'>
                     <center><h3>SUGARCANE</h3></center>
                 </div>
                 <center>
-                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight8&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a22e002dc_00000002" width="1100" height="550" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>                
+                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight8&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a22e002dc_00000002" width="1000" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>                
                 </center>
             </motion.div>
             {isOpen8 && (
@@ -258,13 +270,13 @@ const InsightsComponent = () => {
             className='in-card-container'
             style={{borderRadius: '1.5rem', boxShadow: '0px 10px 30px rgba(0,0,0, 0.5)'}}>
             <motion.div layout="position" className='in-cognos-container'
-                onMouseOut={() => setIsOpen9(false)}
+                // onMouseOut={() => setIsOpen9(false)}
                 onMouseEnter={() => setIsOpen9(true)}>
                 <div className='insight-head2'>
                     <center><h3>LIGHTWEIGHT CROPS</h3></center>
                 </div>
                 <center>
-                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight9&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a23235bb6_00000003" width="1100" height="550" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>                
+                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight9&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a23235bb6_00000003" width="1000" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>                
                 </center>
             </motion.div>
             {isOpen9 && (
@@ -285,7 +297,7 @@ const InsightsComponent = () => {
         <div style={{paddingTop: "1rem", paddingBottom: "1rem"}}>
                 <center><hr style={{width: "1100px"}}/></center>
         </div>
-    </div>
+    </motion.div>
   )
 }
 
