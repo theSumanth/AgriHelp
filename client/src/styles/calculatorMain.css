@@ -1,0 +1,30 @@
+.calcs {
+    padding-top: 4%;
+    height: 100vh;
+} 
+
+.mainform {
+    background-color: #E7ECF2;
+    width: 50%;
+    border-radius: 10px;
+}
+
+table {
+    position: relative;
+    width: 100%;
+}
+
+.form1, .form2 {
+    cursor: pointer;
+}
+
+.activeForm{
+    background-color: white;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    box-shadow: 0px 5px 10px rgba(0,0,0, 0.2);
+    border-top: 4px solid #0f9d58;
+}
+td {
+    padding : 0px;
+}
