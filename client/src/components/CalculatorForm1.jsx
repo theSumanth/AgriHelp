@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import '../styles/calculatorForm.css';
-// import block from './images/block.png';
-// import sun from './images/sun.png';
-// import waterQuan from './images/waterQuan.png';
+import block from './icons/block.png';
+import sun from './icons/sun.png';
+import waterQuan from './icons/waterQuan.png';
 import crops from '../data/calccrop';
 
 const CalculatorForm1 = () => {
@@ -52,8 +52,8 @@ const CalculatorForm1 = () => {
     const waters =["High",
         "Moderate",
         "Low"
-        ]
-
+    ]
+    
     const [land, setLand] = useState("");
     const [season, setSeason] = useState("");
     const [formSubmitted, setFormSubmitted] = useState(false);
@@ -82,7 +82,7 @@ const CalculatorForm1 = () => {
         );
 
         setCropDetails(matchingCrops);
-        setFormSubmitted(true); 
+        setFormSubmitted(true);
     };
 
     return (
@@ -90,13 +90,14 @@ const CalculatorForm1 = () => {
         <div className='firstform'>
             <form onSubmit={handleSubmit}>
                 <div className='form-input'>
-                {/* <img src={block} alt='land icon'></img> */}
+                <img src={block} alt='land icon'></img>
                 {/* <label htmlFor="lands">Choose type of Land  </label> */}
                 <select
                     className="calc-dropdown"
                     // value={land}
                     onChange={onChangeHandler1}
                     id='lands'
+                    required
                 >
                     <option value="none" selected disabled>Select type of Land</option>
                     {lands.map((land_el, index) => {
@@ -111,7 +112,7 @@ const CalculatorForm1 = () => {
                 <br />               
 
                 <div className='form-input'>
-                {/* <img src={sun} alt='sun icon'></img> */}
+                <img src={sun} alt='sun icon'></img>
                 {/* <label htmlFor="seasons">Choose Season  </label> */}
                 <select
                     className="calc-dropdown"
@@ -132,7 +133,7 @@ const CalculatorForm1 = () => {
                 <br />               
 
                 <div className='form-input'>
-                {/* <img src={waterQuan} alt='water icon'></img> */}
+                <img src={waterQuan} alt='water icon'></img>
                 {/* <label htmlFor="waters">Choose amount of Water  </label> */}
                 <select
                     className="calc-dropdown"

@@ -106,10 +106,10 @@ const InsightsComponent = () => {
                 className='in-card-title'>
                 <center>
                     <p>
-                        India experienced one of the worst droughts in the year 2002 with all India rainfall being 81% of its long period average. <br />
+                        India experienced one of the worst droughts in the year 2002 with all India rainfall being 81% of its long period average. [
                         <a href='https://mausamjournal.imd.gov.in/index.php/MAUSAM/article/download/491/459/1790#:~:text=India%20experienced%20one%20of%20the,to%20middle%20of%20nineteenth%20century'>
-                            Source
-                        </a>
+                             Source
+                        </a> ]<br />
                         <b> Therefore area cultivated also decreased</b> <br />
                         Production has been in an upward trend in recent years.
                         According to the forecast production has decreased after 2019-20 which is actually the case.                    </p>
@@ -157,7 +157,7 @@ const InsightsComponent = () => {
                     <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight5&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a1dc4845d_00000001" width="885" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>                
                 </center>
             </motion.div>
-            {isOpen5 && (
+            {/* {isOpen5 && (
             <motion.div 
                 initial={{opacity: 0}} 
                 animate={{opacity: 1}} 
@@ -169,7 +169,7 @@ const InsightsComponent = () => {
                         Unde, dicta quae fugit quidem temporibus itaque ducimus atque iure odit laborum asperiores                    </p>
                 </center>
             </motion.div>
-            )}
+            )} */}
         </motion.div>
 
         <motion.div
@@ -200,6 +200,11 @@ const InsightsComponent = () => {
 
         <div className='insight-head1'>
             <center><h1>Special crops</h1></center>
+            <center>
+                <h5>
+                    Some crops are different from other crops in terms of weight, they can have a lot of weight for each unit like sugarcane or very less weight like cotton. As a result, they can’t be collectively compared with other crops.
+                </h5>
+            </center>
         </div>
 
 

@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import '../styles/calculatorForm.css';
-// import block from './images/block.png';
-// import sun from './images/sun.png';
-// import waterQuan from './images/waterQuan.png';
+import block from './icons/block.png';
+import sun from './icons/sun.png';
+import waterQuan from './icons/waterQuan.png';
 
 const CalculatorForm2 = () => {
     const lands = [
@@ -42,7 +42,7 @@ const CalculatorForm2 = () => {
         <div className='firstform'>
             <form onSubmit={handleSubmit}>
                 <div className='form-input'>
-                {/* <img src={block} alt='land icon'></img> */}
+                <img src={block} alt='land icon'></img>
                 {/* <label htmlFor="lands">Choose type of Land  </label> */}
                 <select
                     className="calc-dropdown"
@@ -63,7 +63,7 @@ const CalculatorForm2 = () => {
                 <br />               
 
                 <div className='form-input'>
-                {/* <img src={sun} alt='sun icon'></img> */}
+                <img src={sun} alt='sun icon'></img>
                 {/* <label htmlFor="seasons">Choose Season  </label> */}
                 <select
                     className="calc-dropdown"
@@ -84,7 +84,7 @@ const CalculatorForm2 = () => {
                 <br />               
 
                 <div className='form-input'>
-                {/* <img src={waterQuan} alt='water icon'></img> */}
+                <img src={waterQuan} alt='water icon'></img>
                 {/* <label htmlFor="waters">Choose amount of Water  </label> */}
                 <select
                     className="calc-dropdown"
