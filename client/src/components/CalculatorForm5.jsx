@@ -136,7 +136,14 @@ const CalculatorForm3 = () => {
         // console.log((ETc).toFixed(2),(net_irrigation_requirement).toFixed(2),(updated_soil_moisture).toFixed(2), (irrigation_duration));
         console.log(ETc, net_irrigation_requirement, updated_soil_moisture, irrigation_duration);
         setUpdatedSoilMoisture(updated_soil_moisture);
+        if(isNaN(irrigation_duration))
+        {
+            setIrrigationDuration(0);
+        }
+        else
+        {
         setIrrigationDuration(irrigation_duration);
+        }
         setFormSubmitted(true);
     };
 
