@@ -8,6 +8,7 @@ import Carousels from "../../components/Carousels";
 const HomePage = () => {
     return (
         <div className="home">
+            <div className="home-bg"></div>
             <Carousels />
             <ReactBackbone/>
             <center>

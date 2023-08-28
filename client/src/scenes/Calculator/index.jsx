@@ -1,11 +1,21 @@
 import React from "react";
 import './calculator.css'
 import CalculatorMain from "../../components/CalculatorMain";
+import CalculatorMain2 from "../../components/CalculatorMain2";
+import bgvid from "../../widgets/bgvid2.mp4";
+import calc_bg from "../../components/images/calc_bg.jpg";
+import CalculatorMain3 from "../../components/CalculatorMain3";
 
 const Calculator = () => {
     return (
-        <div className="calc">
+        <div className="parshu">
+            <video className='calc-bg' muted autoPlay loop poster={calc_bg} id="bgvid">
+                <source src={bgvid} type="video/mp4"/>
+                Your Browser doesn't support the video tag.
+            </video>
             <CalculatorMain />
+            <CalculatorMain2 />
+            <CalculatorMain3 />
         </div>
     )
 }

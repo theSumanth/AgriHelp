@@ -1,0 +1,119 @@
+.irrigation-form {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.3rem;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+
+.forflex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.form5-column {
+    padding-bottom: 5%;
+    /* gap: 5%; */
+}
+
+.form5-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.form5-input button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8cffbc;
+}
+
+.calc-input-field5 {
+    width: 30%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: #333;
+    outline: none;
+    /* cursor: pointer; */
+    /* font-family: "League Spartan", sans-serif !important; */
+    transition: background-color 0.3s;
+}
+
+.location {
+    width: 50%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: #333;
+    outline: none;
+    /* cursor: pointer; */
+    /* font-family: "League Spartan", sans-serif !important; */
+    transition: background-color 0.3s;
+}
+
+.calc-input-field5-readonly {
+    width: 30%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e9e6e6;
+    color: #333;
+    outline: none;
+    /* cursor: pointer; */
+    /* font-family: "League Spartan", sans-serif !important; */
+    transition: background-color 0.3s;
+}
+
+.calc-dropdown5 {
+    width: 65%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    color: #333;
+    outline: none;
+    cursor: pointer;
+    /* font-family: "League Spartan", sans-serif !important; */
+    transition: background-color 0.3s;
+}
+
+.calc-dropdown5:hover {
+    background-color: #beffd9; 
+  }
+  
+  .calc-dropdown5:focus {
+    background-color: #e0e0e0; 
+  }
+  
+  .calc-dropdown5 option {
+    padding: 10px;
+    background-color: white;
+  }
+  
+  .calc-dropdown5 option:hover {
+    background-color: #8cffbc;
+  }
+  
+  .calc-dropdown5::-ms-expand {
+    display: none; 
+  }

@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import '../styles/calculatorForm.css';
-import block from './images/block.png';
-import sun from './images/sun.png';
-import waterQuan from './images/waterQuan.png';
+import block from './icons/block.png';
+import sun from './icons/sun.png';
+import waterQuan from './icons/waterQuan.png';
 
 const CalculatorForm2 = () => {
     const lands = [
@@ -60,7 +60,7 @@ const CalculatorForm2 = () => {
                     })}
                 </select>
                 </div>
-                <br /> <hr />
+                <br />               
 
                 <div className='form-input'>
                 <img src={sun} alt='sun icon'></img>
@@ -81,7 +81,7 @@ const CalculatorForm2 = () => {
                 </select>
                 </div>
 
-                <br /> <hr />
+                <br />               
 
                 <div className='form-input'>
                 <img src={waterQuan} alt='water icon'></img>
@@ -102,7 +102,8 @@ const CalculatorForm2 = () => {
                 </select>
                 </div>
 
-                <br /> <hr />
+                <br />               
+              
                 <center><button className="button-40" type="submit" value="Submit">Submit</button></center>
             </form>
         </div>

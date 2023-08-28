@@ -35,7 +35,7 @@ const CalculatorMain = () => {
     <motion.div 
         layout 
         transition={{layout:{duration:1, type:"spring"}}}
-        className='calcs'>
+        className='calc'>
         <center>
             <motion.div 
                 layout="position"
@@ -49,7 +49,7 @@ const CalculatorMain = () => {
                         <div className='form1' onClick={onClickHandler1}>
                         <center><h3 style={{
                                 color: "#4a4a4a"
-                            }}>Form 1</h3></center>
+                            }}>Crop Recommendation</h3></center>
                         </div>
                     </td>
                     <td className={active2}>
@@ -58,7 +58,7 @@ const CalculatorMain = () => {
                             {/* {onUse1? className={active}: className={'form2'}} */}
                             <center><h3 style={{
                                 color: "#4a4a4a"
-                            }}>Form 2</h3></center>
+                            }}>Some Recommendatin</h3></center>
                         </div>
                     </td>
                 </thead>
@@ -80,6 +80,7 @@ const CalculatorMain = () => {
             </table>
             </motion.div>
         </center>
+
     </motion.div>
   )
 }

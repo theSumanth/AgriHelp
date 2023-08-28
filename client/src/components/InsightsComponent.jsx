@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import {motion} from 'framer-motion'
 
-import '../styles/insightsComponentStyle2.css'
+import '../styles/insightsComponentStyle.css'
 // import bg from "../components/images/background_for_insights.jpg"
 
 const InsightsComponent = () => {
@@ -41,7 +41,7 @@ const InsightsComponent = () => {
                 // onMouseOut={() => setIsOpen(false)}
                 >
                 <center>
-                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight1&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a156479be_00000000" width="1000" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight1&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a156479be_00000000" width="885" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
                 </center>
             </motion.div>
             {isOpen && (
@@ -66,10 +66,9 @@ const InsightsComponent = () => {
             style={{borderRadius: '1.5rem', boxShadow: '0px 10px 30px rgba(0,0,0, 0.5)'}}>
             <motion.div layout="position" className='in-cognos-container'
                 // onMouseOut={() => setIsOpen2(false)}
-                onMouseEnter={() => setIsOpen2(true)}
-            >
+                onMouseEnter={() => setIsOpen2(true)}>
                 <center>
-                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight2&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a159923e1_00000001" width="1000" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight2&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a159923e1_00000001" width="885" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
                 </center>
             </motion.div>
             {isOpen2 && (
@@ -96,7 +95,7 @@ const InsightsComponent = () => {
                 // onMouseOut={() => setIsOpen3(false)}
                 onMouseEnter={() => setIsOpen3(true)}>
                 <center>
-                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight3&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a1b0bf4eb_00000008" width="1000" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight3&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a1b0bf4eb_00000008" width="885" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
                 </center>
             </motion.div>
             {isOpen3 && (
@@ -107,10 +106,10 @@ const InsightsComponent = () => {
                 className='in-card-title'>
                 <center>
                     <p>
-                        India experienced one of the worst droughts in the year 2002 with all India rainfall being 81% of its long period average. <br />
+                        India experienced one of the worst droughts in the year 2002 with all India rainfall being 81% of its long period average. [
                         <a href='https://mausamjournal.imd.gov.in/index.php/MAUSAM/article/download/491/459/1790#:~:text=India%20experienced%20one%20of%20the,to%20middle%20of%20nineteenth%20century'>
-                            Source
-                        </a>
+                             Source
+                        </a> ]<br />
                         <b> Therefore area cultivated also decreased</b> <br />
                         Production has been in an upward trend in recent years.
                         According to the forecast production has decreased after 2019-20 which is actually the case.                    </p>
@@ -128,7 +127,7 @@ const InsightsComponent = () => {
                 // onMouseOut={() => setIsOpen4(false)}
                 onMouseEnter={() => setIsOpen4(true)}>
                 <center>
-                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsights4&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a1c218cbb_00000001" width="1000" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>                
+                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsights4&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a1c218cbb_00000001" width="885" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>                
                 </center>
             </motion.div>
             {isOpen4 && (
@@ -155,10 +154,10 @@ const InsightsComponent = () => {
                 // onMouseOut={() => setIsOpen5(false)}
                 onMouseEnter={() => setIsOpen5(true)}>
                 <center>
-                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight5&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a1dc4845d_00000001" width="1000" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>                
+                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight5&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a1dc4845d_00000001" width="885" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>                
                 </center>
             </motion.div>
-            {isOpen5 && (
+            {/* {isOpen5 && (
             <motion.div 
                 initial={{opacity: 0}} 
                 animate={{opacity: 1}} 
@@ -170,7 +169,7 @@ const InsightsComponent = () => {
                         Unde, dicta quae fugit quidem temporibus itaque ducimus atque iure odit laborum asperiores                    </p>
                 </center>
             </motion.div>
-            )}
+            )} */}
         </motion.div>
 
         <motion.div
@@ -182,7 +181,7 @@ const InsightsComponent = () => {
                 // onMouseOut={() => setIsOpen6(false)}
                 onMouseEnter={() => setIsOpen6(true)}>
                 <center>
-                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight6&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a1df8f52c_00000002" width="1000" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>                
+                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight6&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a1df8f52c_00000002" width="885" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>                
                 </center>
             </motion.div>
             {isOpen6 && (
@@ -201,6 +200,11 @@ const InsightsComponent = () => {
 
         <div className='insight-head1'>
             <center><h1>Special crops</h1></center>
+            <center>
+                <h5>
+                    Some crops are different from other crops in terms of weight, they can have a lot of weight for each unit like sugarcane or very less weight like cotton. As a result, they can’t be collectively compared with other crops.
+                </h5>
+            </center>
         </div>
 
 
@@ -216,7 +220,7 @@ const InsightsComponent = () => {
                     <center><h3>COCONUT</h3></center>
                 </div>
                 <center>
-                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight7&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a22d71877_00000002" width="1000" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>                
+                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight7&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a22d71877_00000002" width="885" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>                
                 </center>
             </motion.div>
             {isOpen7 && (
@@ -246,7 +250,7 @@ const InsightsComponent = () => {
                     <center><h3>SUGARCANE</h3></center>
                 </div>
                 <center>
-                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight8&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a22e002dc_00000002" width="1000" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>                
+                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight8&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a22e002dc_00000002" width="885" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>                
                 </center>
             </motion.div>
             {isOpen8 && (
@@ -276,7 +280,7 @@ const InsightsComponent = () => {
                     <center><h3>LIGHTWEIGHT CROPS</h3></center>
                 </div>
                 <center>
-                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight9&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a23235bb6_00000003" width="1000" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>                
+                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight9&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a23235bb6_00000003" width="885" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>                
                 </center>
             </motion.div>
             {isOpen9 && (
