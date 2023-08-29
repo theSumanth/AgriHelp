@@ -184,7 +184,7 @@ const InsightsComponent = () => {
                     <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight6&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a1df8f52c_00000002" width="885" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>                
                 </center>
             </motion.div>
-            {isOpen6 && (
+            {/* {isOpen6 && (
             <motion.div 
                 initial={{opacity: 0}} 
                 animate={{opacity: 1}} 
@@ -195,15 +195,15 @@ const InsightsComponent = () => {
                         Some crops are different from other crops in terms of weight, they can have a lot of weight for each unit like sugarcane or very less weight like cotton. As a result, they can’t be collectively compared with other crops.                    </p>
                 </center>
             </motion.div>
-            )}
+            )} */}
         </motion.div>
 
         <div className='insight-head1'>
             <center><h1>Special crops</h1></center>
             <center>
-                <h5>
-                    Some crops are different from other crops in terms of weight, they can have a lot of weight for each unit like sugarcane or very less weight like cotton. As a result, they can’t be collectively compared with other crops.
-                </h5>
+                <p>
+                    Some crops are different from other crops in terms of weight, they can have a lot of weight for each unit <br />like sugarcane or very less weight like cotton. As a result, they can’t be collectively compared with other crops.
+                </p>
             </center>
         </div>
 

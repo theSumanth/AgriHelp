@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-import CalculatorForm5 from './CalculatorForm5';
 import '../styles/calculatorMain.css'
 import {motion} from 'framer-motion';
+import CalculatorForm6 from './CalculatorForm6';
 
-const CalculatorMain3 = () => {
+const CalculatorMain4 = () => {
   return (
     <motion.div
         layout 
@@ -15,21 +15,21 @@ const CalculatorMain3 = () => {
                 initial={{opacity: 0}} 
                 animate={{opacity: 1}} 
                 transition={{duration: 1}}
-                className='mainform3'>
+                className='mainform4'>
             <table style={{borderCollapse: "collapse"}}>
                 <thead>
                     <td style={{}} className='activeForm'>
                         <div className='form1'>
                         <center><h3 style={{
                                 color: "#4a4a4a"
-                            }}>Irrigation Scheduler</h3></center>
+                            }}>Pesticide Recommendation</h3></center>
                         </div>
                     </td>
                 </thead>
                 <tr>
                     <td>
                         <div>
-                            <CalculatorForm5 />
+                            <CalculatorForm6 />
                         </div>
                     </td>
                 </tr>
@@ -40,4 +40,4 @@ const CalculatorMain3 = () => {
   )
 }
 
-export default CalculatorMain3
+export default CalculatorMain4

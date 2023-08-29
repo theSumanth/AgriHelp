@@ -5,6 +5,7 @@ import CalculatorMain2 from "../../components/CalculatorMain2";
 import bgvid from "../../widgets/bgvid2.mp4";
 import calc_bg from "../../components/images/calc_bg.jpg";
 import CalculatorMain3 from "../../components/CalculatorMain3";
+import CalculatorMain4 from "../../components/CalculatorMain4";
 
 const Calculator = () => {
     return (
@@ -16,6 +17,7 @@ const Calculator = () => {
             <CalculatorMain />
             <CalculatorMain2 />
             <CalculatorMain3 />
+            <CalculatorMain4 />
         </div>
     )
 }
