@@ -1,12 +1,11 @@
 import React, { useState } from 'react'
+import axios from 'axios';
 import '../styles/calculatorForm.css';
 import nitrogen from './icons/nitrogen2.png';
 import potassium from './icons/potassium.png';
 import phosphorus from './icons/phosphorus.png';
 import soilicon from './icons/soil.png';
 import wheat from './icons/wheat.png';
-
-
 import image1 from './images/urea.jpg'
 import image2 from './images/10-26-26.png'
 import image3 from './images/14-35-14.jpg'
@@ -16,8 +15,7 @@ import image6 from './images/28-28.jpg'
 import image7 from './images/dap.jpg'
 
 const CalculatorForm3 = () => {
-import axios from "axios";
-const CalculatorForm3 = () => {
+
     // const lands = [
     //     "land1",
     //     "land2",
@@ -184,4 +182,4 @@ const CalculatorForm3 = () => {
     )
 }
 
-export default CalculatorForm3
+export default CalculatorForm3;
