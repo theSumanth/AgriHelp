@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import axios from 'axios';
-import '../styles/calculatorForm.css';
 import nitrogen from './icons/nitrogen2.png';
 import potassium from './icons/potassium.png';
 import phosphorus from './icons/phosphorus.png';
@@ -13,15 +12,8 @@ import image4 from './images/17-17-17.jpg'
 import image5 from './images/20-20.jpg'
 import image6 from './images/28-28.jpg'
 import image7 from './images/dap.jpg'
-
+import '../styles/calculatorForm.css';
 const CalculatorForm3 = () => {
-
-    // const lands = [
-    //     "land1",
-    //     "land2",
-    //     "land3",
-    //
-
     const soils = [
         "Black", "Clayey", "Loamy", "Red", "Sandy",
     ]
@@ -38,7 +30,7 @@ const CalculatorForm3 = () => {
         'Dap': image7,
     };
 
-    const [fert, setFert] = useState("");
+    // const [fert, setFert] = useState("");
     const [nitro, setNitro] = useState(0);
     const [data, setData] = useState(0);
     const [potas, setPotas] = useState(0);
@@ -72,8 +64,8 @@ const CalculatorForm3 = () => {
         event.preventDefault();
         console.log(nitro, potas, phos, soil, crop);
 
-        setFert("urea")
-        console.log(fert);
+        // setFert("urea")
+        // //console.log(fert);
         setFormSubmitted(true);
         axios.post('/api/calculator', {
              nitro,
@@ -182,4 +174,4 @@ const CalculatorForm3 = () => {
     )
 }
 
-export default CalculatorForm3;
+export default CalculatorForm3
