@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import joblib
-app = Flask(__name__)
+app = Flask(__name__,static_folder='./build',static_url_path='/')
 CORS(app)
 
 # Load the machine learning model
@@ -9,10 +9,23 @@ model = joblib.load('newclassifier.pkl')  # Replace with the actual path to your
 Soil = {'Black':0, 'Clayey':1, 'Loamy':2, 'Red':3, 'Sandy':4}
 Crop = {'Barley':0, 'Cotton':1, 'Ground Nuts':2, 'Maize':3, 'Millets':4, 'Oil seeds':5,
        'Paddy':6, 'Pulses':7, 'Sugarcane':8, 'Tobacco':9, 'Wheat':10}
-@app.route('/calculator', methods=['POST'])
+
+
+# Serving react application
+@app.route('/')
+def index():
+    return app.send_static_file('index.html')
+
+
+@app.route('/api/calculator', methods=['POST','GET'])
 def predict():
-    data = request.get_json()
-    print(data)
+    try:
+        data = request.get_json()
+        print(data)
+    except:
+        return{
+            'message':'Input not given.'
+        },400
     nitro = int(data['nitro'])
     potas = int(data['potas'])
     phos = int(data['phos'])

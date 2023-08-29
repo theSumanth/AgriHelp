@@ -48,8 +48,8 @@ const CalculatorForm3 = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        axios.post('http://localhost:5000/calculator', {
-            'nitro': nitro,
+        axios.post('/api/calculator', {
+             nitro,
             'potas': potas,
             'phos': phos,
             'soil': soil,
