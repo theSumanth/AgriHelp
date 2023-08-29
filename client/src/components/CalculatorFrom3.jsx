@@ -13,6 +13,7 @@ import image5 from './images/20-20.jpg'
 import image6 from './images/28-28.jpg'
 import image7 from './images/dap.jpg'
 import '../styles/calculatorForm.css';
+
 const CalculatorForm3 = () => {
     const soils = [
         "Black", "Clayey", "Loamy", "Red", "Sandy",
