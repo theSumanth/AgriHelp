@@ -5,13 +5,24 @@ import potassium from './icons/potassium.png';
 import phosphorus from './icons/phosphorus.png';
 import soilicon from './icons/soil.png';
 import wheat from './icons/wheat.png';
+
+
+import image1 from './images/urea.jpg'
+import image2 from './images/10-26-26.png'
+import image3 from './images/14-35-14.jpg'
+import image4 from './images/17-17-17.jpg'
+import image5 from './images/20-20.jpg'
+import image6 from './images/28-28.jpg'
+import image7 from './images/dap.jpg'
+
+const CalculatorForm3 = () => {
 import axios from "axios";
 const CalculatorForm3 = () => {
     // const lands = [
     //     "land1",
     //     "land2",
     //     "land3",
-    // ]
+    //
 
     const soils = [
         "Black", "Clayey", "Loamy", "Red", "Sandy",
@@ -19,12 +30,25 @@ const CalculatorForm3 = () => {
 
     const crops = ["Barley", "Cotton", "Ground Nuts", "Maize", "Millets", "Oil seeds", "Paddy", "Pulses", "Sugarcane", "Tobacco", "Wheat"]
 
+    const fertilizers = {
+        'urea': image1,
+        '10-26-26': image2,
+        '14-35-14': image3,
+        '17-17-17': image4,
+        '20-20': image5,
+        '28-28': image6,
+        'Dap': image7,
+    };
+
+    const [fert, setFert] = useState("");
     const [nitro, setNitro] = useState(0);
     const [data, setData] = useState(0);
     const [potas, setPotas] = useState(0);
     const [phos, setPhos] = useState(0);
     const [soil, setSoil] = useState("");
     const [crop, setCrop] = useState("");
+
+    const [formSubmitted, setFormSubmitted] = useState(false);
 
     const onChangeHandler1 = (event) => {
         setNitro(event.target.value);
@@ -48,6 +72,11 @@ const CalculatorForm3 = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+        console.log(nitro, potas, phos, soil, crop);
+
+        setFert("urea")
+        console.log(fert);
+        setFormSubmitted(true);
         axios.post('/api/calculator', {
              nitro,
             'potas': potas,
@@ -145,6 +174,12 @@ const CalculatorForm3 = () => {
 
                 <center><button className="button-40" type="submit" value="Submit">Submit</button></center>
             </form>
+            {formSubmitted && (
+                <div className='image-field3'>
+                    <p>{(fert.toUpperCase())}</p>
+                    <img className='image-file' src={fertilizers[fert]} alt='fertilzer'/>
+                </div>
+            )}
         </div>
     )
 }

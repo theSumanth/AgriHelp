@@ -1,0 +1,41 @@
+.image-field img {
+    cursor: pointer;
+}
+
+.image-field {
+    display: flex;
+    justify-content: center;
+    border-style: dashed;
+    border-color: #52b788;
+    border-radius: 5%;
+    width: 50%;
+    column-gap: 5%;
+}
+
+.image-field img{
+    margin: 25%;
+}
+
+.image-field .image-file{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.form6 {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 0.3rem;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    height: 200%;
+    column-gap: 5%;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+
+.button-field button {
+    margin-top: 25%;
+    margin-bottom: 25%;
+}

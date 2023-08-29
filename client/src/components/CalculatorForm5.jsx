@@ -180,12 +180,12 @@ const CalculatorForm3 = () => {
                         </div>
                         <br></br>
                         <div className="form5-input">
-                            <span>humidity</span>
+                            <span>Humidity</span>
                             <input className="calc-input-field5-readonly" type="number" disabled value={humidity} readOnly />
                         </div>
                         <br></br>
                         <div className="form5-input">
-                            <span>wind speed</span>
+                            <span>Wind speed</span>
                             <input className="calc-input-field5-readonly" type="number" disabled value={windSpeed} readOnly />
                         </div>
                     </div>
@@ -199,7 +199,7 @@ const CalculatorForm3 = () => {
                         </div>
                         <br></br>
                         <div className="form5-input">
-                            <span>Wilting Capacity</span>
+                            <span>Wilting Capacity Power</span>
                             <input className="calc-input-field5-readonly" type="number" disabled value={wiltingCapacity} readOnly />
                         </div>
                         <br></br>
@@ -211,7 +211,7 @@ const CalculatorForm3 = () => {
                     <br></br>
                     <div className="form5-column">
                         <div className="form5-input">
-                            <span>initial Soil Moisture</span>
+                            <span>Initial Soil Moisture</span>
                             <input
                                 className="calc-input-field5"
                                 type="number"
@@ -240,9 +240,10 @@ const CalculatorForm3 = () => {
                 </form>
                 {formsubmitted && (<div>
                 <br></br>
-                    
-                    <span>Updated Soil Moisture :  </span><span>{updatedSoilMoisture}</span> <br /><br />
-                    <span>Irrigation duration :</span><span>{irrigationDuration}</span> 
+                <div className="output-form5">
+                    <p>Updated Soil Moisture : {updatedSoilMoisture}</p>
+                    <p>Irrigation duration : {irrigationDuration}</p>
+                </div>
                 </div>)
                 }
             </center>
