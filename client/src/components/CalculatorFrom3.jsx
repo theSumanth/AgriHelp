@@ -31,7 +31,7 @@ const CalculatorForm3 = () => {
         'Dap': image7,
     };
 
-    // const [fert, setFert] = useState("");
+     const [fert, setFert] = useState("urea");
     const [nitro, setNitro] = useState(0);
     const [data, setData] = useState(0);
     const [potas, setPotas] = useState(0);
@@ -65,7 +65,7 @@ const CalculatorForm3 = () => {
         event.preventDefault();
         console.log(nitro, potas, phos, soil, crop);
 
-        // setFert("urea")
+        setFert("urea")
         // //console.log(fert);
         setFormSubmitted(true);
         axios.post('/api/calculator', {
