@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import axios from 'axios';
+import api from '../apis/axiosConfig.js'
 import nitrogen from './icons/nitrogen2.png';
 import potassium from './icons/potassium.png';
 import phosphorus from './icons/phosphorus.png';
@@ -22,16 +22,16 @@ const CalculatorForm3 = () => {
     const crops = ["Barley", "Cotton", "Ground Nuts", "Maize", "Millets", "Oil seeds", "Paddy", "Pulses", "Sugarcane", "Tobacco", "Wheat"]
 
     const fertilizers = {
-        'urea': image1,
+        'Urea': image1,
         '10-26-26': image2,
         '14-35-14': image3,
         '17-17-17': image4,
         '20-20': image5,
         '28-28': image6,
-        'Dap': image7,
+        'DAP': image7,
     };
 
-     const [fert, setFert] = useState("urea");
+     const [fert, setFert] = useState("");
     const [nitro, setNitro] = useState(0);
     const [data, setData] = useState(0);
     const [potas, setPotas] = useState(0);
@@ -65,10 +65,9 @@ const CalculatorForm3 = () => {
         event.preventDefault();
         console.log(nitro, potas, phos, soil, crop);
 
-        setFert("urea")
-        // //console.log(fert);
+
         setFormSubmitted(true);
-        axios.post('/api/calculator', {
+        api.post('/api/calculator', {
              nitro,
             'potas': potas,
             'phos': phos,
@@ -77,6 +76,7 @@ const CalculatorForm3 = () => {
         })
             .then(function(response)  { 
                 console.log(response.data.prediction);
+                setFert(response.data.prediction);
                 setData(response.data.prediction);
              })
             .catch(error => console.error(error));
