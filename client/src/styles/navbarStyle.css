@@ -3,9 +3,9 @@ nav ul li .navbutton.active {
 }
 
 .logo {
-    height: 15%;
-    width: 15%;
-    margin-left: 2%;
+    height: 12%;
+    width: 12%;
+    margin-left: 3%;
 }
 
 ol, ul {
@@ -46,7 +46,7 @@ nav ul li .navbutton {
     padding: 1.0rem 0.2rem;
     margin: 0 1.5rem;
     /* transition: 0.3s ease-in-out; */
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 nav ul li .navbutton::after {

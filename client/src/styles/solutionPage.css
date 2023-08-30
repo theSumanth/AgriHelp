@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+.solution-page p, h1, h3, h4{
+    font-family: 'Inter', sans-serif !important;
+    /* font-family: 'Oswald', sans-serif; */
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+/* .solution-page p {
+    font-size: large;
+} */
+
+.solution-page h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: xx-large;
+    /* text-decoration: underline; */
+    line-height: 3rem;
+}
+
+.solution-one {
+    background: linear-gradient(to right, #235c64, #203a43);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.solution-page {
+    background-color: white;
+    /* margin-top: 3%; */
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 30%;
+    margin-left: 30%;
+    line-height: 1.5rem;
+    text-align: justify;
+    padding: 2%;
+    width: 60%;
+}
+
+.solution-page img {
+    width: 100%;
+}
+
+/* .solution-page h2 {
+    text-decoration: underline rgb(156, 255, 209);
+} */
+
+.solution-page li {
+    margin-left: 2%;
+    margin-bottom: -1%;
+    font-weight: 200;
+}
+
+/* @media (max-width: 768px) {
+    .solution-page {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+  } */

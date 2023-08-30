@@ -24,6 +24,10 @@
     filter: brightness(0.7)
 } */
 
+.description1 {
+    display: block;
+}
+
 .mainform {
     box-shadow: 0px 10px 30px rgba(0,0,0, 0.2);
     background-color: #E7ECF2;
