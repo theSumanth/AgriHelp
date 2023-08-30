@@ -49,6 +49,7 @@ const CalculatorForm2 = () => {
                     // value={land}
                     onChange={onChangeHandler1}
                     id='lands'
+                    required
                 >
                     <option value="none" selected disabled>Select type of Land</option>
                     {lands.map((land_el, index) => {
@@ -69,6 +70,7 @@ const CalculatorForm2 = () => {
                     className="calc-dropdown"
                     onChange={onChangeHandler2}
                     id='seasons'
+                    required
                 >
                     <option value="none" selected disabled>Select Season</option>
                     {seasons.map((season_el, index) => {
@@ -90,6 +92,7 @@ const CalculatorForm2 = () => {
                     className="calc-dropdown"
                     onChange={onChangeHandler3}
                     id='waters'
+                    required
                 >
                     <option value="none" selected disabled>Select amount of water</option>
                     {waters.map((water_el, index) => {

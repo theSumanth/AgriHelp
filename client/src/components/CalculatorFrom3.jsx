@@ -91,10 +91,14 @@ const CalculatorForm3 = () => {
                     <img src={nitrogen} alt='nitrogen icon'></img>
                     <input
                         className='calc-input-field'
-                        type='text'
+                        type='number'
+                        min="0"
+                        step="any"
                         placeholder='Enter Nitrogen amount'
                         id='nitro' name='nitro'
+                        required
                         onChange={onChangeHandler1}
+
                     />
                 </div>
                 <br />
@@ -103,9 +107,12 @@ const CalculatorForm3 = () => {
                     <img src={potassium} alt='potassium icon'></img>
                     <input
                         className='calc-input-field'
-                        type='text'
+                        type='number'
+                        min="0"
+                        step="any"
                         placeholder='Enter Potassium amount'
                         id='nitro' name='nitro'
+                        required
                         onChange={onChangeHandler2}
                     />
                 </div>
@@ -115,9 +122,12 @@ const CalculatorForm3 = () => {
                     <img src={phosphorus} alt='phosphorus icon'></img>
                     <input
                         className='calc-input-field'
-                        type='text'
+                        type='number'
+                        min="0"
+                        step="any"
                         placeholder='Enter Phosphorus amount'
                         id='nitro' name='nitro'
+                        required
                         onChange={onChangeHandler3}
                     />
                 </div>
@@ -127,6 +137,7 @@ const CalculatorForm3 = () => {
                     <img src={soilicon} alt='soil icon'></img>
                     <select
                         className="calc-dropdown"
+                        required
                         onChange={onChangeHandler4}
                         id='soils'
                     >
@@ -147,6 +158,7 @@ const CalculatorForm3 = () => {
                     <img src={wheat} alt='crop icon'></img>
                     <select
                         className="calc-dropdown"
+                        required
                         onChange={onChangeHandler5}
                         id='crops'
                     >

@@ -70,7 +70,9 @@ const CalculatorForm1 = () => {
     }
 
     const onChangeHandler3 = (event) => {
-        setWater(event.target.value);
+        const words = event.target.value.split(' ');
+
+        setWater(words[0]);
     }
 
     const handleSubmit = (event) => {
@@ -118,6 +120,7 @@ const CalculatorForm1 = () => {
                     className="calc-dropdown"
                     onChange={onChangeHandler2}
                     id='seasons'
+                    required
                 >
                     <option value="none" selected disabled>Select Season</option>
                     {seasons.map((season_el, index) => {
@@ -139,6 +142,7 @@ const CalculatorForm1 = () => {
                     className="calc-dropdown"
                     onChange={onChangeHandler3}
                     id='waters'
+                    required
                 >
                     <option value="none" selected disabled>Select amount of water</option>
                     {waters.map((water_el, index) => {
@@ -154,7 +158,8 @@ const CalculatorForm1 = () => {
                 <br />               
                 <center><button className="button-40" type="submit" value="Submit">Submit</button></center>
             </form>
-            {formSubmitted && (
+            {formSubmitted && ((cropDetails.length > 0)?(
+                
                 <div className="crop-details">
                     <table>
                         <thead>
@@ -183,7 +188,11 @@ const CalculatorForm1 = () => {
                         </tbody>
                     </table>
                 </div>
-            )}
+            ):
+            (
+                <p>Not Found</p>
+            ))
+            }
         </div>
     )
 }

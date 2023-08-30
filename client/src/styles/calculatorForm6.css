@@ -39,8 +39,9 @@
 }
 
 .button-field button {
-    margin-top: 25%;
-    margin-bottom: 25%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /* margin-bottom: 25%; */
 }
 
 .image-field09 {

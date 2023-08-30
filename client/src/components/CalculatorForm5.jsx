@@ -3,7 +3,7 @@ import '../styles/calculatorForm5.css';
 import irrigation from "../data/irrigation";
 import Dropdowns from "../widgets/DropDown";
 import axios from 'axios';
-
+import LoadingOverlay from "../widgets/Loader";
 const CalculatorForm3 = () => {
     const data = {
         crops: ["Rice",
@@ -50,6 +50,7 @@ const CalculatorForm3 = () => {
     const [soilMoisture, setSoilMoisture] = useState(0);
     const [irrigationRate, setIrrigationRate] = useState(0);
     const [formsubmitted, setFormSubmitted] = useState(false);
+    const [loading, setLoading] = useState(false);
     const handleLocationChange = (event) => {
         setLocation(event.target.value);
     };
@@ -59,9 +60,17 @@ const CalculatorForm3 = () => {
     const handleIrrigationRate = (event) => {
         setIrrigationRate(event.target.value);
     }
+    // useEffect(() => {
+    //     if (loading === true) {
+    //       document.body.style.overflow = 'hidden';
+    //     } else {
+    //       document.body.style.overflow = 'auto';
+    //     }
+    //   }, [loading]);
 
     const handleFetchClick = async (event) => {
         event.preventDefault();
+        setLoading(true);
         const options = {
             method: 'GET',
             url: 'https://apjoy-weather-forecast.p.rapidapi.com/forecast',
@@ -69,21 +78,24 @@ const CalculatorForm3 = () => {
                 location: location
             },
             headers: {
-                'X-RapidAPI-Key': 'c134a951e7mshd259334330baa17p141fd1jsn93d3fd28737c',
+                'X-RapidAPI-Key': '02956eff5dmshcf1f3e1b89d83c1p12fbcdjsnad2929422f11',
                 'X-RapidAPI-Host': 'apjoy-weather-forecast.p.rapidapi.com'
             }
         };
 
         try {
             const response = await axios.request(options);
-
+            
             setTempMin(response.data.list[0].main.temp_min);
             setTempMax(response.data.list[0].main.temp_max);
             setHumidity(response.data.list[0].main.humidity);
             setWindSpeed(response.data.list[0].wind.speed)
+            setLoading(false);
             console.log(response);
         } catch (error) {
+            setLoading(false);
             console.error(error);
+            
         }
     };
 
@@ -166,6 +178,7 @@ const CalculatorForm3 = () => {
                                 />
                                 <button style={{cursor:"pointer"}} onClick={handleFetchClick}>Fetch</button>
                             {/* </div> */}
+                            {loading && <LoadingOverlay />}
                         </div>
                         <br></br>
                         <div className="form5-input">
@@ -241,8 +254,8 @@ const CalculatorForm3 = () => {
                 {formsubmitted && (<div>
                 <br></br>
                 <div className="output-form5">
-                    <p>Updated Soil Moisture : {updatedSoilMoisture}</p>
-                    <p>Irrigation duration : {irrigationDuration}</p>
+                    <p>Updated Soil Moisture : {updatedSoilMoisture} mm/day</p>
+                    <p>Irrigation duration : {irrigationDuration} Days</p>
                 </div>
                 </div>)
                 }
