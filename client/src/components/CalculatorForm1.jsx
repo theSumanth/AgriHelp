@@ -49,9 +49,9 @@ const CalculatorForm1 = () => {
       "Summer"
     ]
 
-    const waters =["High",
-        "Moderate",
-        "Low"
+    const waters =["High (60000-120000 liters/acre)",
+        "Moderate (30000-6000 liters/acre)",
+        "Low (15000-30000 liters/acre)"
     ]
     
     const [land, setLand] = useState("");
