@@ -1,6 +1,7 @@
 
 
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;500&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;500&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
  html,
 body,
@@ -10,5 +11,10 @@ body,
   height: 100% !important;
   width: 100% !important;
 
-  font-family: "League Spartan", sans-serif !important;
+  /* font-family: "League Spartan", sans-serif !important; */
+  font-family: 'Poppins', sans-serif;
 } 
+
+p {
+  font-weight: 400;
+}

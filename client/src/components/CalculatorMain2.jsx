@@ -58,7 +58,7 @@ const CalculatorMain2 = () => {
                             {/* {onUse1? className={active}: className={'form2'}} */}
                             <center><h3 style={{
                                 color: "#4a4a4a"
-                            }}>Some Recommendation</h3></center>
+                            }}>What it does?</h3></center>
                         </div>
                     </td>
                 </thead>
@@ -72,7 +72,13 @@ const CalculatorMain2 = () => {
 
                         <div>
                             {onUse2 && (
-                                <CalculatorForm2 />
+                                <div className='firstform' style={{paddingTop: "2%"}}>
+                                    <div className='description'>
+                                        <p>After conducting soil testing, the farmer can determine crucial information about their soil including nutrient availability, pH value, moisture levels and more. With this knowledge the farmer can make informed decisions about selecting the appropriate fertilizers tailored to their specific crop and land requirements.</p>
+                                        {/* <br /> */}
+                                        <p>By supplying information of nitrogen, phosphorus and potassium levels in the soil along with the crop type and land characteristics, the farmer can determine the precise fertilizer needed for the successful growth of crop. This proactive approach prevents crop loss due to nutrient deficiencies, ensuring healthier and more productive yields.</p>
+                                    </div>
+                                </div>
                             )}
                         </div>
                     </td>

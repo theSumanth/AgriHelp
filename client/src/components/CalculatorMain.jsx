@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import CalculatorForm1 from './CalculatorForm1'
-import CalculatorForm2 from './CalculatorForm2';
 import '../styles/calculatorMain.css'
 import {motion} from 'framer-motion';
 
@@ -58,7 +57,7 @@ const CalculatorMain = () => {
                             {/* {onUse1? className={active}: className={'form2'}} */}
                             <center><h3 style={{
                                 color: "#4a4a4a"
-                            }}>Some Recommendatin</h3></center>
+                            }}>What it does?</h3></center>
                         </div>
                     </td>
                 </thead>
@@ -72,7 +71,18 @@ const CalculatorMain = () => {
 
                         <div>
                             {onUse2 && (
-                                <CalculatorForm2 />
+                                <div className='firstform' style={{paddingTop: "2%"}}>
+                                    <div className='description'>
+                                        <p>A farmer can engage in farming based on the knowledge of their soil type, the current season and water availability in their land, even without extensive knowledge about their soil</p>
+                                        <ul style={{marginLeft:"5%"}}>
+                                            <li>Name of the crop</li>
+                                            <li>Machinery Required</li>
+                                            <li>Capital Required</li>
+                                            <li>Required Fertilizers</li>
+                                        </ul>
+                                        <p>Using this information, the farmer can choose crops that not only suit their land's conditions but also align with their additional considerations such as budget and available machinery.</p>
+                                    </div>
+                                </div>
                             )}
                         </div>
                     </td>
