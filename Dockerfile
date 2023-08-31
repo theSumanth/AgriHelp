@@ -13,6 +13,7 @@ FROM python:3.9
 COPY ./server/requirements.txt /app/requirements.txt
 WORKDIR /app
 RUN pip install gunicorn
+RUN pip install --no-cache-dir tensorflow
 RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
