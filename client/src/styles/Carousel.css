@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap'); 
 .img {      
     height: 100%;
     object-fit: cover;
@@ -7,13 +7,16 @@
 .item {
     height: 480px;
 }
+.carousel-text h1 {
+    font-family: 'Oswald', sans-serif !important;
+}
 .carousel-text {
     position: absolute !important;
     z-index: 50;
     top: 180px;
   
     width: 100%;
-    padding: 10px;
+    /* padding: 10px; */
     text-align: center;
     pointer-events: none;
     font-size: 2rem;

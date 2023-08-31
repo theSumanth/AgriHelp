@@ -20,14 +20,14 @@ function App() {
       <NavBar />
       <ScrollToTop/>
         <Routes>
-          <Route path='/' element={<HomePage/>}></Route>
-          <Route path='/insights' element={<Insights/>}></Route>
-          <Route path="/calculator" element={<Calculator/>}></Route>
+          <Route path="/" element={<HomePage/>}></Route>
+          <Route path="/insights" element={<Insights/>}></Route>
+          <Route path="/solution" element={<Calculator/>}></Route>
           <Route path="/states/:stateName" element={<DetailReport/>}></Route>
-          <Route path="/other-solution1" element={<SolutionOne />}></Route>
-          <Route path="/other-solution2" element={<SolutionTwo />}></Route>
-          <Route path='/other-solution3' element={<SolutionThree />}></Route>
-          <Route path='/other-solution4' element={<SolutionFour />}></Route>
+          <Route path="/othersolution1" element={<SolutionOne />}></Route>
+          <Route path="/othersolution2" element={<SolutionTwo />}></Route>
+          <Route path="/othersolution3" element={<SolutionThree />}></Route>
+          <Route path="/othersolution4" element={<SolutionFour />}></Route>
         </Routes>
       </BrowserRouter>
     </>

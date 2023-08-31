@@ -26,7 +26,7 @@ const Carousels = () => {
      <div className='carousel-text'>
     <center><h1>Indian Agriculture</h1></center>
     </div>
-    <Carousel showArrows={true}  onChange={onChange} onClickItem={onClickItem} showThumbs={false} infiniteLoop={true} autoPlay={true} interval={3000}>
+    <Carousel showArrows={true}  onChange={onChange} onClickItem={onClickItem} showThumbs={false} infiniteLoop={true} autoPlay={true} showStatus={false} interval={3000}>
       <div className='item'>
         <img className="img" src={k1} alt="Slide 1" />
       </div>
