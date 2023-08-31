@@ -4,7 +4,7 @@ from PIL import Image
 import io
 # from tensorflow import keras
 from keras.preprocessing import image
-from keras.preprocessing.image import img_to_array
+# from keras.preprocessing.image import img_to_array
 
 import joblib
 import numpy as np
