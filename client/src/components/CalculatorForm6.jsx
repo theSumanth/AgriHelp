@@ -45,6 +45,7 @@ const CalculatorForm6 = () => {
             setLoading(false);
             // console.log(loading);
             console.log(response.data.pre);
+            console.log(response.data.message);
             setPest(response.data.pre);
             setFormSubmitted(true);
         }

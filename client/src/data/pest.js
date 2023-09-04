@@ -96,10 +96,42 @@ const pests = {
         name : "Yellow leaf Virus",
         image : "/images/tomato yellow leaf curl virus1.jpg"
     },
-    "":{
-        name : ""
+    "Apple___healthy" : {
+        name :"Apple Healthy"
     },
-
+    "Blueberry___healthy" : {
+        name :"Blueberry Healthy"
+    },
+    "Cherry_(including_sour)___healthy" : {
+        name : "Cherry Healthy"
+    },
+    "Corn_(maize)___healthy":{
+        name : "Corn Healthy"
+    },
+    "Grape___healthy" : {
+        name : "Grape Healthy"
+    },
+    "Peach___healthy" : {
+        name : "Peach Healthy"
+    },
+    "Pepper,_bell___healthy" : {
+        name : "Pepper Healthy"
+    },
+    "Potato___healthy" : {
+        name : "Potato Healthy"
+    },
+    "Raspberry___healthy" : {
+        name : "Raspberry Healthy"
+    },
+    "Soybean___healthy" : {
+        name : "Soybean Healthy"
+    },
+    "Strawberry___healthy" : {
+        name : "Strawberry Healthy"
+    },
+    "Tomato___healthy" : {
+        name : "Tomato Healthy"
+    }
 }
 
 export default pests;

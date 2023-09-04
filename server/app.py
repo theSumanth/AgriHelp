@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request,render_template, jsonify
 from flask_cors import CORS
 from PIL import Image
 import io
@@ -20,10 +20,30 @@ Crop = {'Barley':0, 'Cotton':1, 'Ground Nuts':2, 'Maize':3, 'Millets':4, 'Oil se
 
 
 # Serving react application
-@app.route('/')
-def index():
-    return app.send_static_file('index.html')
 
+# Define other routes first
+# @app.route('/')
+# def index():
+#     return app.send_static_file('index.html')
+@app.route('/')
+@app.route('/insights')
+@app.route('/solution')
+@app.route('/othersolution1')
+@app.route('/othersolution2')
+@app.route('/othersolution3')
+@app.route('/othersolution4')
+def catch_all(path='index.html'):
+    return app.send_static_file(path)
+
+@app.route('/states/<state_name>')
+def show(state_name):
+    return app.send_static_file("index.html")
+# Catch-all route should be the last one and should include 'path' as an argument
+# @app.route('/', defaults={'path': ''})
+
+# @app.route("/insights")
+# def po():
+#     return app.send_static_file('index.html')
 
 @app.route('/api/calculator', methods=['POST','GET'])
 def predict():
@@ -74,15 +94,13 @@ def mdl():
         img_array = np.expand_dims(img_array, axis=0)
         img_array /= 255.0
         l = img_array[0].tolist()
-        API_KEY = "F2MMw1zEoAkWU_msoPlY0tw4OVGoRc_nuzYNcb1skLUp"
-        token_response = requests.post('https://iam.cloud.ibm.com/identity/token', data={"apikey": API_KEY, "grant_type": 'urn:ibm:params:oauth:grant-type:apikey'})
+        API_KEY = "hEAtO8VeJelyl11Umha_KIKJO9XnhfBA-oufUl2kMrpY"
+        token_response = requests.post('https://iam.cloud.ibm.com/identity/token', data={"apikey":API_KEY, "grant_type": 'urn:ibm:params:oauth:grant-type:apikey'})
         mltoken = token_response.json()["access_token"]
-
         header = {'Content-Type': 'application/json', 'Authorization': 'Bearer ' + mltoken}
-
+        # NOTE: manually define and pass the array(s) of values to be scored in the next line
         payload_scoring = {"input_data": [{"fields": [], "values": [l]}]}
-
-        response_scoring = requests.post('https://eu-gb.ml.cloud.ibm.com/ml/v4/deployments/015ec6b0-e6ec-4649-820c-e87818f72fce/predictions?version=2021-05-01', json=payload_scoring,headers={'Authorization': 'Bearer ' + mltoken})
+        response_scoring = requests.post('https://eu-gb.ml.cloud.ibm.com/ml/v4/deployments/e5b5d409-66e8-4a15-88e6-9bddc11a8009/predictions?version=2021-05-01', json=payload_scoring,headers={'Authorization': 'Bearer ' + mltoken})
         print("Scoring response")
         print(response_scoring.json())
         predicted_class_index = response_scoring.json()['predictions'][0]['values'][0][1]
@@ -124,7 +142,7 @@ def mdl():
         'Tomato___Tomato_Yellow_Leaf_Curl_Virus',
         'Tomato___Tomato_mosaic_virus',
         'Tomato___healthy']
-# predicted_class_index = np.argmax(predictions)
+        # predicted_class_index = np.argmax(predictions)
         predicted_class_name = class_names[predicted_class_index]
 
         print(f"The model predicts: {predicted_class_name}")
@@ -132,10 +150,14 @@ def mdl():
             "message" : "Successful",
             "pre" : predicted_class_name
         }
-    except:
+    except Exception as e:
         return {
-            'message': "Input not given"
+            'message': e,
+            "pre": "not found"
         },400
     
+# @app.route('/<path:path>')
+# def catch_all(path):
+#     return app.send_static_file('index.html')
 if __name__ == '__main__':
     app.run(debug=True)

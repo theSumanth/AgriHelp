@@ -14,8 +14,7 @@ import SolutionFour from './scenes/otherSolutions/SolutionFour';
 function App() {
  
   return (
-    <>
-      
+    <>     
       <BrowserRouter>
       <NavBar />
       <ScrollToTop/>

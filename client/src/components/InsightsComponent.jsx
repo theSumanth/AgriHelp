@@ -14,6 +14,10 @@ const InsightsComponent = () => {
     const [isOpen7, setIsOpen7] = useState(false);
     const [isOpen8, setIsOpen8] = useState(false);
     const [isOpen9, setIsOpen9] = useState(false);
+    const [isOpen10, setIsOpen10] = useState(false);
+    const [isOpen11, setIsOpen11] = useState(false);
+    const [isOpen12, setIsOpen12] = useState(false);
+
 
     return (
         <motion.div className='insights'
@@ -184,7 +188,7 @@ const InsightsComponent = () => {
                         <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight6&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a1df8f52c_00000002" width="885" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
                     </center>
                 </motion.div>
-                {isOpen6 && (
+                {/* {isOpen6 && (
                     <motion.div
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -195,17 +199,88 @@ const InsightsComponent = () => {
                                 Some crops are different from other crops in terms of weight, they can have a lot of weight for each unit like sugarcane or very less weight like cotton. As a result, they can’t be collectively compared with other crops.                    </p>
                         </center>
                     </motion.div>
+                )} */}
+            </motion.div>
+            <motion.div
+                layout
+                transition={{ layout: { duration: 1, type: "spring" } }}
+                className='in-card-container'
+                style={{ borderRadius: '1.5rem', boxShadow: '0px 10px 30px rgba(0,0,0, 0.5)' }}>
+                <motion.div layout="position" className='in-cognos-container'
+                    // onMouseOut={() => setIsOpen4(false)}
+                    onMouseEnter={() => setIsOpen10(true)}>
+                    <center>
+                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight%2B10&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a59b1f0a3_00000000" width="885" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+                    </center>
+                </motion.div>
+                {isOpen10 && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1 }}
+                        className='in-card-title'>
+                        <center>
+                            <p>
+                            Population of India is following a strict upward trend, while agricultural land has seen no change compared to it. Production is increasing due to positive yield. <a target='_blank' href="https://ourworldindata.org/yields-vs-land-use-how-has-the-world-produced-enough-food-for-a-growing-population">Source</a>
+                            </p>
+                        </center>
+                    </motion.div>
                 )}
             </motion.div>
-
+            <motion.div
+                layout
+                transition={{ layout: { duration: 1, type: "spring" } }}
+                className='in-card-container'
+                style={{ borderRadius: '1.5rem', boxShadow: '0px 10px 30px rgba(0,0,0, 0.5)' }}>
+                <motion.div layout="position" className='in-cognos-container'
+                    // onMouseOut={() => setIsOpen4(false)}
+                    onMouseEnter={() => setIsOpen11(true)}>
+                    <center>
+                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight%2B11&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a5e2e4915_00000001" width="885" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+                    </center>
+                </motion.div>
+                {isOpen11 && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1 }}
+                        className='in-card-title'>
+                        <center>
+                            <p>The average of Overall Total Loss (%) (Farm Operation + Transport + Storage) is 7.556 %</p>
+                        </center>
+                    </motion.div>
+                )}
+            </motion.div>
+            <motion.div
+                layout
+                transition={{ layout: { duration: 1, type: "spring" } }}
+                className='in-card-container'
+                style={{ borderRadius: '1.5rem', boxShadow: '0px 10px 30px rgba(0,0,0, 0.5)' }}>
+                <motion.div layout="position" className='in-cognos-container'
+                    // onMouseOut={() => setIsOpen4(false)}
+                    onMouseEnter={() => setIsOpen12(true)}>
+                    <center>
+                    <iframe src="https://us3.ca.analytics.ibm.com/bi/?perspective=dashboard&amp;pathRef=.my_folders%2FInsight%2B12&amp;closeWindowOnLastView=true&amp;ui_appbar=false&amp;ui_navbar=false&amp;shareMode=embedded&amp;action=view&amp;mode=dashboard&amp;subView=model0000018a5f6374b6_00000001" width="885" height="450" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen=""></iframe>
+                    </center>
+                </motion.div>
+                {isOpen12 && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        transition={{ duration: 1 }}
+                        className='in-card-title'>
+                        <center>
+                            <p>Many claims have not been approved and some states have opted out of this scheme. You can know more about it <a target='_blank' href="https://www.drishtiias.com/daily-news-analysis/improving-pradhan-mantri-fasal-bima-yojana-scheme">here</a></p>
+                        </center>
+                    </motion.div>
+                )}
+            </motion.div>
             <div className='insight-head1'>
                 <center><h1 className='title-head'>Special Crops</h1></center>
                 <center>
                     <p>Some crops are different from other crops in terms of weight, they can have a lot of weight for each unit <br></br>like sugarcane or very less weight like cotton. As a result, they can’t be collectively compared with other crops.</p>
                 </center>
             </div>
-
-
             <motion.div
                 layout
                 transition={{ layout: { duration: 1, type: "spring" } }}
