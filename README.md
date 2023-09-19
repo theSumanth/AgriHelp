@@ -41,11 +41,26 @@ Before you begin, ensure you have met the following requirements:
 #### Frontend:
 
 1. Navigate to the `frontend` directory:
+      ```bash
+      cd frontend
+      ```
 2. Install dependencies:
+     ```bash
+       npm install
+     ```
 
 #### Backend:
 
 1. Navigate to the `backend` directory:
-2. Create and activate a virtual environment (recommended):
-3. Install Python dependencies:
-
+    ```bash
+      cd backend
+    ```
+3. Create and activate a virtual environment (recommended):
+    ```bash
+    python -m venv venv
+    source venv/bin/activate
+    ```
+5. Install Python dependencies:
+   ```bash
+   pip install -r requirements.txt
+  ```
